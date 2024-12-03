@@ -39,7 +39,8 @@ class OrdersMetricCard extends StatelessWidget {
             const SizedBox(height: 10),
             Text(
               label,
-              maxLines: 1,
+              maxLines: 2,
+              textAlign: TextAlign.center,
               style: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -49,6 +50,7 @@ class OrdersMetricCard extends StatelessWidget {
             Expanded(
               child: Text(
                 value,
+                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.w600,

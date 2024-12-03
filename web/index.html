@@ -34,5 +34,24 @@
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCQKEVVGJt4Ow-1oK1274u8LsswH37Bvgc",
+      authDomain: "orders-insights.firebaseapp.com",
+      projectId: "orders-insights",
+      storageBucket: "orders-insights.firebasestorage.app",
+      messagingSenderId: "308111381181",
+      appId: "1:308111381181:web:1405a49c8bc31150421dd4"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
 </body>
 </html>

@@ -24,6 +24,7 @@ This project is a Flutter application designed to display insightful metrics and
 
 ## How to Run the Project
   - You can check the release section for the app versions.
+  - Also can use this link https://orders-insights.web.app to view on web
 
 1. **Clone the Repository**
    ```bash
