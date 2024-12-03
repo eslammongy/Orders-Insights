@@ -76,7 +76,7 @@ class _MonthsDropdownMenuState extends State<MonthsDropdownMenu> {
                 Border.all(color: context.theme.colorScheme.primary, width: 2),
           ),
           height: 40,
-          width: 140,
+          width: 130,
         ),
         menuItemStyleData: const MenuItemStyleData(
           height: 40,

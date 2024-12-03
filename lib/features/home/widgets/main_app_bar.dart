@@ -20,6 +20,7 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
         AppStrings.appName,
         style: AppTextStyles.bold20(context),
       ),
+      centerTitle: false,
       backgroundColor: SizeConfig().isMobile
           ? colorScheme.surface
           : colorScheme.primaryContainer,

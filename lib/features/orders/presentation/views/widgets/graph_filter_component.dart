@@ -36,7 +36,7 @@ class _GraphFilterComponentState extends State<GraphFilterComponent> {
       borderRadius: BorderRadius.circular(12),
       borderWidth: 2,
       constraints: const BoxConstraints(
-        minWidth: 60,
+        minWidth: 55,
         minHeight: 35,
       ),
       children: [
