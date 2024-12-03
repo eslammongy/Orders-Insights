@@ -13,17 +13,21 @@ class GraphFilterComponent extends StatefulWidget {
 }
 
 class _GraphFilterComponentState extends State<GraphFilterComponent> {
-  final List<bool> _isSelected = [true, false];
   @override
   Widget build(BuildContext context) {
+     final currentFilter = OrdersCubit.get(context).graphFilter;
+    final List<bool> isSelected = [
+      currentFilter == GraphFilter.hours,
+      currentFilter == GraphFilter.days,
+    ];
     final theme = context.theme;
     return ToggleButtons(
       direction: Axis.horizontal, // Set vertical orientation
-      isSelected: _isSelected,
+      isSelected: isSelected,
       onPressed: (int index) {
         setState(() {
-          for (int i = 0; i < _isSelected.length; i++) {
-            _isSelected[i] = i == index;
+          for (int i = 0; i < isSelected.length; i++) {
+            isSelected[i] = i == index;
           }
         });
         OrdersCubit.get(context).graphFilter = GraphFilter.values[index];
